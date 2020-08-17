@@ -12,9 +12,9 @@ public class Book {
 	@Id
 	@GeneratedValue
 	private String id, name;
-
+ 
 	private double cost;
-
+    @ManyToOne
 	private Author author;
 
 	public Book() {
